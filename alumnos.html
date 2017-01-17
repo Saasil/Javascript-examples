@@ -1,1 +1,79 @@
-# Javascript-examples
+
+//Cargar un String por teclado e implementar las siguientes funciones: 
+//a) Imprimir la primera mitad de los caracteres de la cadena.
+//b) Imprimir el último carácter.
+//c) Imprimirlo en forma inversa.
+//d) Imprimir cada carácter del String separado con un guión.
+//e) Imprimir la cantidad de vocales almacenadas.
+
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function Mitad(texto)
+  {
+  var largo = texto.length;
+  var mitad = largo/2;
+  document.write(texto.substring(0,mitad)+'<br>');
+  }
+
+function ultimo(texto)
+  {
+  var largo = texto.length;
+  document.write(texto.charAt(largo-1)+'<br>');
+  }
+
+function Inversa(texto)
+  {
+  var largo = texto.length;
+  var x;
+    for (x = largo ; x>0 ; x = x-1)
+    {
+    document.write(texto.charAt(x-1))
+    }
+  document.write('<br>');
+  }
+
+function Guion(texto)
+  {
+  var largo = texto.length;
+  var x;
+    for (x = 0 ; x<largo ; x++)
+    {
+    if(x == largo-1)
+    document.write(texto.charAt(x));
+    else
+    document.write(texto.charAt(x)+' - ');
+    }
+  document.write('<br>');
+  }
+
+function Vocales(texto)
+  {
+  texto = texto.toLowerCase();
+  var largo = texto.length;
+  var x;
+  var vocal = 0;
+    for (x = 0 ; x<largo ; x++)
+    {
+      if (texto.charAt(x) == 'a' || texto.charAt(x) == 'e' || texto.charAt(x) == 'i'
+      || texto.charAt(x) == 'o' || texto.charAt(x) == 'u')
+      vocal = vocal+1;
+    }
+  document.write('Tiene '+vocal+' vocales'+'<br>');
+  }
+
+var texto = prompt('Ingrese texto');
+  
+Mitad(texto);
+ultimo(texto);
+Inversa(texto);
+Guion(texto);
+vocales(texto);
+</script>
+
+</body>
+</html>
