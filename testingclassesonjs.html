@@ -1,0 +1,65 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+function cargardatos()
+{
+this.cargaredad = cargaredad;
+this.cargarnombre=cargarnombre;
+}
+
+function cargarnombre()
+{
+this.nombre=prompt('Ingrese su nombre');
+}
+
+function cargaredad()
+{
+this.edad=prompt('Edad');
+}
+
+function empresa(nombre)
+{
+this.nombre = nombre;
+this.edad = 42;
+this.verificar = verificar;
+}
+
+function verificar(num)
+{
+if(num<42)
+return true;
+else
+return false;
+}
+
+var datos = new Array();
+
+for (x = 0 ; x<=2 ; x++)
+{
+
+datos[x] = new cargardatos();
+datos[x].cargarnombre();
+datos[x].cargaredad();
+document.write ("Nombre postulante: "+datos[x].nombre+"<br>Edad del postulante: "+datos[x].edad+"<br>----<br><br>");
+}
+
+var testempresa = new Array();
+
+for ( x = 0 ; x<=2 ; x++)
+{
+testempresa[x] = new empresa(datos[x].nombre);
+document.write("Nombre del des/aprobado: "+testempresa[x].nombre+" || ");
+if(testempresa[x].verificar(datos[x].edad))
+document.write("Aprobado<br><br>");
+else
+document.write("sorete<br><br>");
+}
+
+
+
+</script>
+</body>
+</html>
