@@ -1,0 +1,45 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+/*Confeccionar una clase persona que permita almacenar el nombre y la edad. Luego definir un vector de 4 componentes de tipo persona. Imprimir el nombre de la persona de mayor edad; decir también si hay más de una persona con la edad mayor.
+*/
+function Persona(nombre,edad)
+{
+this.nombre = nombre
+this.edad =  edad;
+this.imprimir = imprimir;
+}
+
+
+function imprimir()
+{
+document.write("El nombre es "+this.nombre);
+}
+var nombre = new Array(4);
+nombre[0] = new Persona("Fede",62);
+nombre[1] = new Persona("Javi",42);
+nombre[2] = new Persona("Alex",62);
+nombre[3] = new Persona("Isa",62);
+var maximapos = 0;
+
+for ( x = 1 ; x<nombre.length ; x++)
+{
+if(nombre[x].edad > nombre[maximapos].edad) // Knowing the biggest number on an Array;
+maximapos = x;
+}
+
+document.write("Personas mayores: "+"<br>");
+for ( x = 0 ; x<nombre.length ; x++)
+{
+
+if(nombre[x].edad == nombre[maximapos].edad)
+document.write(nombre[x].nombre+" "+nombre[x].edad+"<br>");
+
+}
+</script>
+
+</body>
+</html>
