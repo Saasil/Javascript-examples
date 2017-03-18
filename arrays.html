@@ -1,0 +1,52 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+/*Crear un vector con 10 valores aleatorios comprendidos entre 1 y 500. Luego crear otros dos vectores y copiar los elementos menores a 250 en el segundo vector y los mayores o iguales a 250 en el tercer vector. Imprimir los tamaños del segundo y tercer vector. Imprimir los tres vectores.
+*/
+
+var numrandom = new Array (10);
+for (x=0 ; x<numrandom.length ; x++){
+var random = Math.round(Math.random()*500) +1;
+numrandom[x] = random;
+document.write(numrandom[x]+"<br>");
+}
+
+
+var menores = [];
+var totalmen = 0;
+document.write("<br>Menores:<br>");
+for ( x = 0 ; x<numrandom.length ; x++){
+if (numrandom[x] < 250) 
+{
+menores[x] = numrandom[x];
+document.write(menores[x]+"<br>");
+totalmen++
+}
+
+}
+document.write("Total menores: "+totalmen+"<br>");
+
+var mayores = [];
+var totalmay = 0;
+document.write("<br>Mayores:<br>");
+for ( x = 0 ; x<numrandom.length ; x++){
+if (numrandom[x] >= 250) 
+{
+mayores[x] = numrandom[x];
+document.write(mayores[x]+"<br>");
+totalmay++
+}
+}
+document.write("Total mayores: "+totalmay+"<br>");
+
+
+
+
+</script>
+
+</body>
+</html>
+     
