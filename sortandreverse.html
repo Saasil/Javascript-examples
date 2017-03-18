@@ -1,0 +1,46 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+/*Cargar los sueldos de un conjunto de empleados. Finalizar la carga al ingresar cero. Mostrar por pantalla los sueldos ordenados de mayor a menor.*/
+
+var sueldos = [];
+var empleados;
+empleados = parseInt(empleados); //remember use 'parseInt' to not get disorder.
+do{
+empleados = prompt('ingrese sueldo');
+
+if ( empleados!=0)
+{
+sueldos.push(empleados);
+}
+
+}while (empleados!=0);
+
+sueldos.sort(function(v1,v2)
+{
+if(v1>v2)
+return 1;
+else
+return 0;
+});
+
+for(x = 0 ; x < sueldos.length ; x++)
+{
+document.write(sueldos[x]+"<br>");
+}
+
+document.write("<br>Reverse<br>");
+
+sueldos.reverse();
+
+for(x = 0 ; x < sueldos.length ; x++)
+{
+document.write(sueldos[x]+"<br>");
+}
+</script>
+
+</body>
+</html>
