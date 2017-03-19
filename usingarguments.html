@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function mayor()
+{
+
+var mayor = 0;
+
+for (x = 1; x< arguments.length ; x++)
+{
+if (arguments[x] > arguments[mayor])
+mayor = x;
+}
+document.write(arguments[mayor]);
+document.write("<br>");
+
+}
+
+
+mayor(100,111,122,500);
+</script>
+
+</body>
+</html>
+     
