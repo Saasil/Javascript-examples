@@ -1,0 +1,36 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+/*Elaborar un programa que muestre un div de color rojo. Cuando se presione cambiar el color a amarillo y luego de soltar el botón del mouse volver a pintar de rojo.*/
+
+addEventListener('load',cambio,false);
+
+function cambio()
+{
+document.getElementById('sector').addEventListener('mousedown',down,false);
+}
+
+function down()
+{
+document.getElementById('sector').style.backgroundColor='yellow';
+document.getElementById('sector').addEventListener('mouseup',up,false);
+}
+
+function up()
+{
+document.getElementById('sector').style.backgroundColor='red';
+
+}
+
+
+
+</script>
+<div id="sector" style ="width : 200px ;height : 200px ; background-color:red" >
+</div>
+
+</body>
+</html>
+     
