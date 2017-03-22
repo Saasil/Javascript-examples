@@ -1,0 +1,37 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+
+addEventListener('load',inicio,false);
+
+
+
+function inicio()
+{
+reloj = setInterval(procesar2,1000);
+pagina = setTimeout(procesar,10000);
+}
+
+function procesar()
+{
+window.location = "www.google.com.ar";
+
+}
+
+function procesar2()
+{
+var num = parseInt(document.getElementById('reloj').innerHTML);
+
+num++;
+
+document.getElementById('reloj').innerHTML = num;
+
+}
+
+</script>
+<p id="reloj">0</p>
+</body>
+</html>
