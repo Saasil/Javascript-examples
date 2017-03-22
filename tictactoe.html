@@ -24,43 +24,51 @@ addEventListener('load',inicio,false);
 	jugador = "X";	
 	}
 	
-	
-	
  	function verificar(){
+        var bt1 = document.getElementById('boton1').value;
+	var bt2 = document.getElementById('boton2').value;
+	var bt3 = document.getElementById('boton3').value;
+	var bt4 = document.getElementById('boton4').value;
+	var bt5 = document.getElementById('boton5').value;
+	var bt6 = document.getElementById('boton6').value;
+	var bt7 = document.getElementById('boton7').value;
+	var bt8 = document.getElementById('boton8').value;
+	var bt9 = document.getElementById('boton9').value;
     //////////////////////Player "X"//////////////////////
-	if( document.getElementById('boton1').value == "X" && document.getElementById('boton2').value == "X" && document.getElementById('boton3').value == "X")
+	if( bt1 == "X" && bt2 == "X" && bt3 == "X")
 		alert("Gano X"); // horizonal1
-	if( document.getElementById('boton4').value == "X" && document.getElementById('boton5').value == "X" && document.getElementById('boton6').value == "X")	
-		alert("Gano X"); //horizonal2
-	if( document.getElementById('boton7').value == "X" && document.getElementById('boton8').value == "X" && document.getElementById('boton9').value == "X")
-		alert("Gano X"); //horizonal3
-	if( document.getElementById('boton1').value == "X" && document.getElementById('boton5').value == "X" && document.getElementById('boton9').value == "X")
-		alert("Gano X"); //diagonalright
-	if( document.getElementById('boton7').value == "X" && document.getElementById('boton5').value == "X" && document.getElementById('boton3').value == "X")
-		alert("Gano X"); //diagonalleft
-	if( document.getElementById('boton1').value == "X" && document.getElementById('boton4').value == "X" && document.getElementById('boton7').value == "X")
-		alert("Gano X"); //vertical1	
-	if( document.getElementById('boton2').value == "X" && document.getElementById('boton5').value == "X" && document.getElementById('boton8').value == "X")
-		alert("Gano X"); //vertical2
-	if( document.getElementById('boton3').value == "X" && document.getElementById('boton6').value == "X" && document.getElementById('boton9').value == "X")
-		alert("Gano X"); //vertical3
+	if( bt4 == "X" && bt5 == "X" && bt6 == "X")
+		alert("Gano X"); // horizonal2
+	if( bt7 == "X" && bt8 == "X" && bt9 == "X")
+		alert("Gano X"); // horizonal3
+	if( bt1 == "X" && bt5 == "X" && bt9 == "X")
+		alert("Gano X"); // diagonalrigth
+	if( bt3 == "X" && bt5 == "X" && bt7 == "X")
+		alert("Gano X"); // diagonalleft
+	if( bt1 == "X" && bt4 == "X" && bt7 == "X")
+		alert("Gano X"); // vertical1
+	if( bt2 == "X" && bt5 == "X" && bt8 == "X")
+		alert("Gano X"); // vertical2
+	if( bt3 == "X" && bt6 == "X" && bt9 == "X")
+		alert("Gano X"); // vertical3
+		
 	//////////////////////PLAYER "O"//////////////////////
-	if( document.getElementById('boton1').value == "O" && document.getElementById('boton2').value == "O" && document.getElementById('boton3').value == "O")
+	if( bt1 == "O" && bt2 == "O" && bt3 == "O")
 		alert("Gano O"); // horizonal1
-	if( document.getElementById('boton4').value == "O" && document.getElementById('boton5').value == "O" && document.getElementById('boton6').value == "O")	
-		alert("Gano O"); //horizonal2
-	if( document.getElementById('boton7').value == "O" && document.getElementById('boton8').value == "O" && document.getElementById('boton9').value == "O")
-		alert("Gano O"); //horizonal3
-	if( document.getElementById('boton1').value == "O" && document.getElementById('boton5').value == "O" && document.getElementById('boton9').value == "O")
-		alert("Gano O"); //diagonalright
-	if( document.getElementById('boton7').value == "O" && document.getElementById('boton5').value == "O" && document.getElementById('boton3').value == "O")
-		alert("Gano O"); //diagonalleft
-	if( document.getElementById('boton1').value == "O" && document.getElementById('boton4').value == "O" && document.getElementById('boton7').value == "O")
-		alert("Gano O"); //vertical1	
-	if( document.getElementById('boton2').value == "O" && document.getElementById('boton5').value == "O" && document.getElementById('boton8').value == "O")
-		alert("Gano O"); //vertical2
-	if( document.getElementById('boton3').value == "O" && document.getElementById('boton6').value == "O" && document.getElementById('boton9').value == "O")
-		alert("Gano O"); //vertical3	
+	if( bt4 == "O" && bt5 == "O" && bt6 == "O")
+		alert("Gano O"); // horizonal2
+	if( bt7 == "O" && bt8 == "O" && bt9 == "O")
+		alert("Gano O"); // horizonal3
+	if( bt1 == "O" && bt5 == "O" && bt9 == "O")
+		alert("Gano O"); // diagonalrigth
+	if( bt3 == "O" && bt5 == "O" && bt7 == "O")
+		alert("Gano O"); // diagonalleft
+	if( bt1 == "O" && bt4 == "O" && bt7 == "O")
+		alert("Gano O"); // vertical1
+	if( bt2 == "O" && bt5 == "O" && bt8 == "O")
+		alert("Gano O"); // vertical2
+	if( bt3 == "O" && bt6 == "O" && bt9 == "O")
+		alert("Gano O"); // vertical3
 	}
 	
 
