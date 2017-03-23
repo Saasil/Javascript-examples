@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+
+var dato = prompt("Punto y dos digitos");
+var coordenada= prompt("Coordenada (xxx,xxx)");
+
+var corvalida = /^[0-9]{1,3},[0-9]{1,3}$/
+var datvalido = /^.[0-9]{1,3}$/;
+
+
+
+if(corvalida.test(coordenada))
+document.write(coordenada+"<br>");
+else
+document.write("Wrong1"+"<br>");
+
+if(datvalido.test(dato))
+document.write(dato+"<br>");
+else
+document.write("Wrong2");
+</script>
+
+</body>
+</html>
+     
